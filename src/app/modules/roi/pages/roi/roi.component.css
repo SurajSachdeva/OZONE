@@ -1,0 +1,55 @@
+.container{
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.roi-table{
+    overflow-x: auto;
+    text-decoration: none;
+    border-collapse: collapse;
+}
+
+.roi-table tr td{
+    border: none;
+}
+
+.roi-table th{
+    font-size: small;
+    color: rgba(0, 0, 255, 0.911);
+    border: none;
+}
+
+.info{
+    border-left: 3px solid  rgba(0, 0, 255, 0.911);;
+    margin-left: 25px;
+}
+
+input{
+    width: 100px;
+}
+
+.inp1{
+    width: 140px;
+}
+
+.btn{
+    width: 50%;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 12px;
+}
+
+
+ ::-webkit-scrollbar {
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(128, 128, 128);
+}    

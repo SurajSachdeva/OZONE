@@ -1,0 +1,76 @@
+<div class="main-wrapper">
+  <div class="container">
+    <div class="row">
+      <app-dash-columns></app-dash-columns>
+    </div>
+    
+    <div class="row mt-4">
+      <div class="col-lg-2 col-md-2 col-sm-4 col-4">
+        <div class=""><b>Dashboard</b></div>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-1 col-1"></div>
+      <div class="col-lg-2 col-md-2 col-sm-1 col-1"></div>
+      <div class="col-lg-2 col-md-2 col-sm-1 col-1"></div>
+      <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+        <!-- <select class="form-select form-select-sm">
+          <option selected>For Month</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select> -->
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-3 col-3">
+        <div class="form-group form-inline">
+          <input class="form-control ml-2" type="text" name="searchTerm" />
+          <!-- <span class="ml-3" *ngIf="service.loading$ | async">Loading...</span> -->
+      </div>
+      </div>
+
+        <div class="row mt-4">
+        <form>
+          <table class="table table-striped">
+            <thead>
+            <tr>
+              <th scope="col" >Time<br>Stamp</th>
+              <th scope="col" sortable="">Division</th>
+              <th scope="col" sortable="">Product 1</th>
+              <th scope="col" sortable="">Product 2</th>
+              <th scope="col" sortable="">Product 3</th>
+              <th scope="col" sortable="">Doctor Name</th>
+              <th scope="col" sortable="">Speciality</th>
+              <th scope="col" sortable="">Address</th>
+              <th scope="col" sortable="">Contact No</th>
+              <th scope="col" sortable="">Email Id</th>
+              <th scope="col" sortable="">Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let item of data">
+              <td class="">{{item.TimeStamp}}</td>
+              <td>{{item.Division}}</td>
+              <td>{{item.Product1}}</td>
+              <td>{{item.Product2}}</td>
+              <td>{{item.Product3}}</td>
+              <td>{{item.DoctorName}}</td>
+              <td>{{item.Speciality}}</td>
+              <td>{{item.Address}}</td>
+              <td>{{item.Contact_No}}</td>
+              <td>{{item.Email_Id}}</td>
+              <td>{{item.Status}}</td>
+            </tr>
+            </tbody>
+          </table>
+        
+           <div class="d-flex justify-content-between p-2">
+            <!-- <ngb-pagination
+              [collectionSize]="(total$ | async)!" [(page)]="service.page" [pageSize]="service.pageSize">
+            </ngb-pagination> -->
+          </div> 
+        
+        </form>
+        
+
+      </div>
+    </div>
+  </div>
+</div>

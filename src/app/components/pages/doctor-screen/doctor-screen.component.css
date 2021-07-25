@@ -1,0 +1,62 @@
+.container2{
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+.info{
+    border-left: 3px solid blue;
+    margin-left: 35px;
+}
+
+.btn{
+    width: 15%;
+    margin: 8px;
+}
+
+.form-row{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+label{
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+
+.checkRow1{
+    width: 30%;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+.checkRow2{
+    width: 15%;
+    padding: 0px;
+    margin-left: 0px
+}
+
+textarea{
+    margin-left: 15px;
+    width: 60%;
+}
+strong{
+    font-size: 16px;
+}
+
+button{
+    margin-left: 25px;
+}
+
+.logo-footer {
+    text-align: center;
+    position: sticky-bottom;
+    color: #fff;
+    background-color: rgb(121, 121, 121);
+    height: 60px;
+    padding-top: 20px;
+}
+
+.logo-footer p {
+    vertical-align: bottom;
+}

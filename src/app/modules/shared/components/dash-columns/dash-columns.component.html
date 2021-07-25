@@ -1,0 +1,178 @@
+    <div class="container" *ngIf="!isAdmin">
+        <div class="row gx-3 mt-4">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                <a>
+                    <div class="card">
+                        <img src="./../../../../../assets/img/tiles-bg-1.png" class="card-img-top">
+                        <div class="row card-info">
+                            <div class="col-lg-8 col-md-8 col-sm-6 col-8 info">
+                                <h3>{{ soCount.OnBoardDoctor }}</h3>
+                                <small class="tag">Onboarded Doctors</small><br>
+                                <small>Till Month</small>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-4 dash-img c1">
+                                <img src="./../../../../../assets/img/tiles-ico-1.png">
+                            </div>
+                        </div>
+                    </div>
+                </a>  
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                <a>
+                    <div class="card ">
+                        <img src="./../../../../../assets/img/tiles-bg-2.png" class="card-img-top">
+                        <div class="row card-info">
+                            <div class="col-lg-8 col-md-8 col-sm-6 col-8 info">
+                                <h3>{{ soCount.SampleRequest }}</h3>
+                                <small class="tag">Sample Requests</small><br>
+                                <small>Till Month</small>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-4 dash-img c2">
+                                <img src="./../../../../../assets/img/tiles-ico-2.png ">
+                            </div>
+                        </div>
+                    </div>
+                </a>  
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                <a>
+                    <div class="card">
+                        <img src="./../../../../../assets/img/tiles-bg-3.png" class="card-img-top">
+                        <div class="row card-info">
+                            <div class="col-lg-8 col-md-8 col-sm-6 col-8 info">
+                                <h3>{{ soCount.ROI }}</h3>
+                                <small class="tag">Avg. ROI/Dr./Month</small><br>
+                                <small>Till Month</small>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-4 dash-img c3">
+                                <img src="./../../../../../assets/img/tiles-ico-3.png">
+                            </div>
+                        </div>
+                    </div>
+                </a>  
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                <a>
+                    <div class="card">
+                        <img src="./../../../../../assets/img/tiles-bg-4.png" class="card-img-top">
+                        <div class="row card-info ">
+                            <div class="row">
+                                <div class="col-lg-8 col-md-8 col-sm-6 info">
+                                    <h5 class="tag kyc">KYC Updated</h5>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 dash-img c4 ">
+                                    <img src="./../../../../../assets/img/tiles-ico-4.png" width="20">
+                                </div>
+                            </div>
+                            <div class="row kyc2">
+                                <div class="col-lg-4 col-md-4 col-sm-4 info-col col-bor">
+                                    <div class="row col-span1"><b>{{soCount.KYC_Total}}</b></div>
+                                    <div class="row col-span2 total"><small class="text">Total</small></div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 info-col col-bor">
+                                    <div class="row col-span1"><b>{{soCount.Updated}}</b></div>
+                                    <div class="row col-span2"><small class="text">Updated</small></div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 info-col">
+                                    <div class="row col-span1"><b>{{soCount.Pending}}</b></div>
+                                    <div class="row col-span2"><small class="text">Pending</small></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>  
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--     For Admin  Dashboard Columns     -->
+
+    <div class="container" *ngIf="isAdmin">
+        <div class="row gx-3 mt-4">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                <a>
+                    <div class="card">
+                        <img src="./../../../../../assets/img/tiles-bg-1.png" class="card-img-top">
+                        <div class="row card-info">
+                            <div class="col-lg-8 col-md-8 col-sm-6 col-8 info">
+                                <h3>{{ soCount.OnBoardDoctor }}</h3>
+                                <small class="tag">Onboarded Doctors</small><br>
+                                <small>Till Month</small>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-4 dash-img c1">
+                                <img src="./../../../../../assets/img/tiles-ico-1.png">
+                            </div>
+                        </div>
+                    </div>
+                </a>  
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                <a>
+                    <div class="card ">
+                        <img src="./../../../../../assets/img/tiles-bg-2.png" class="card-img-top">
+                        <div class="row card-info">
+                            <div class="col-lg-8 col-md-8 col-sm-6 col-8 info">
+                                <h3>{{ soCount.SampleRequest }}</h3>
+                                <small class="tag">Sample Requests</small><br>
+                                <small>Till Month</small>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-4 dash-img c2">
+                                <img src="./../../../../../assets/img/tiles-ico-2.png ">
+                            </div>
+                        </div>
+                    </div>
+                </a>  
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                <a>
+                    <div class="card">
+                        <img src="./../../../../../assets/img/tiles-bg-3.png" class="card-img-top">
+                        <div class="row card-info">
+                            <div class="col-lg-8 col-md-8 col-sm-6 col-8 info">
+                                <h3>{{ soCount.ROI }}</h3>
+                                <small class="tag">Avg. ROI/Dr./Month</small><br>
+                                <small>Till Month</small>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-4 dash-img c3">
+                                <img src="./../../../../../assets/img/tiles-ico-3.png">
+                            </div>
+                        </div>
+                    </div>
+                </a>  
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                <a>
+                    <div class="card">
+                        <img src="./../../../../../assets/img/tiles-bg-4.png" class="card-img-top">
+                        <div class="row card-info ">
+                            <div class="row">
+                                <div class="col-lg-8 col-md-8 col-sm-6 info">
+                                    <h5 class="tag kyc">KYC Updated</h5>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 dash-img c4 ">
+                                    <img src="./../../../../../assets/img/tiles-ico-4.png" width="20">
+                                </div>
+                            </div>
+                            <div class="row kyc2">
+                                <div class="col-lg-4 col-md-4 col-sm-4 info-col col-bor">
+                                    <div class="row col-span1"><b>{{soCount.KYC_Total}}</b></div>
+                                    <div class="row col-span2 total"><small class="text">Total</small></div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 info-col col-bor">
+                                    <div class="row col-span1"><b>{{soCount.Updated}}</b></div>
+                                    <div class="row col-span2"><small class="text">Updated</small></div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 info-col">
+                                    <div class="row col-span1"><b>{{soCount.Pending}}</b></div>
+                                    <div class="row col-span2"><small class="text">Pending</small></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>  
+            </div>
+        </div>
+
+    </div>

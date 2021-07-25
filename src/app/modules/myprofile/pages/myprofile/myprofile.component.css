@@ -1,0 +1,29 @@
+.container{
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding-bottom: 30px;
+    margin-bottom: 42px;
+}
+
+.info{
+    border-left: 3px solid blue;
+    margin-left: 35px;
+}
+
+.form-row{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btn{
+    width: 50%;
+}
+
+label{
+   font-size: small; 
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 12px;
+}

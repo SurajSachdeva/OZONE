@@ -1,0 +1,112 @@
+.container{
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+.card{
+    border-radius: 8px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.card-img-top{
+    position: relative;
+}
+
+.card-info{
+    position: absolute;
+}
+
+.dash-img{
+    margin-top: 15px;
+    right: 0px;
+    padding-right: 40px;
+}
+
+.c2{
+    padding-left: 30px;
+}
+
+
+.c4{
+    text-align: right;
+    padding-left: 25px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+.info{
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #fff;
+}
+.tag{
+    font-weight: bolder;
+}
+
+.kyc{
+    padding-left: 10px;
+    padding-top: 6px;
+    margin: 0px;
+}
+
+.col-bor{
+    border-right: 1px solid #fff;
+}
+
+.kyc2{
+    color: #fff;
+    margin-top: 8px;
+    padding-right: 0px;
+}
+
+.col-span1{
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}
+
+.col-span2{
+    padding: 2px;
+}
+
+.total{
+padding-left: 15px;
+}
+/* 
+.img5{
+    background-image: url("./../../../dashboard/dashboard-assets/tiles-ico-1.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    margin-top: 7%;
+
+}
+
+.img6{
+    background-image: url("./../../../dashboard/dashboard-assets/tiles-ico-2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.img7{
+    background-image: url("./../../../dashboard/dashboard-assets/tiles-ico-3.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.img8{
+    background-image: url("./../../../dashboard/dashboard-assets/tiles-ico-4.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}  */

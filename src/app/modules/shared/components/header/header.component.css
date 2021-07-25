@@ -1,0 +1,108 @@
+.row{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.top-user-profile .dropdown-menu button {
+    color: #000;
+    font-size: 14px;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 0;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.top-noti-user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.top-user-profile {
+    display: inline-block;
+    margin-left: 30px;
+    vertical-align: middle;
+}
+
+.top-user-profile a {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-decoration: none;
+}
+
+.top-user-profile p {
+    margin-bottom: 0;
+    margin-left: 10px;
+    line-height: 12px;
+    color: #606060;
+    margin-right: 15px;
+    font-size: 13px;
+    /* font-weight: 600; */
+    text-align: center;
+}
+
+.top-user-profile small {
+    display: block;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.dropdown-toggle::after {
+    content: "\f107";
+    font-family: 'Line Awesome Free';
+    border: 0;
+    vertical-align: top;
+    font-weight: 900;
+}
+
+.top-user-profile .dropdown-menu {
+    padding: 0;
+    border-radius: 0;
+}
+
+.top-user-profile .dropdown-menu a {
+    color: #000;
+    font-size: 14px;
+    padding: 10px 15px;
+    min-width: 200px;
+}
+
+.top-user-profile .dropdown-menu.show {
+    left: -5px !important;
+    margin-top: 10px;
+}
+
+.top-user-profile .dropdown-menu a i {
+    color: #000;
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.top-user-profile .dropdown-menu a:hover {
+    background: #eee;
+}
+
+.navbar-menu-items{
+    display: inline-block;
+    text-align: center;
+}
+
+.navbar-collapse .nav-items figcaption{
+    font-size: small;
+    margin: 0px                                                                                     ;
+}
+
+.figure{
+    margin: 0px;
+}
+
+.figure-caption{
+    font-size: 12px;
+}
+
+.navbar-brand img{
+    margin: 0px;
+}

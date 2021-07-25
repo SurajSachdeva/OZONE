@@ -1,0 +1,86 @@
+.container-fluid {
+  background-image: url("./login-assets/login-bg.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+form {
+  width: 68%;
+}
+
+.form-group{
+ position: relative;
+}
+
+.formCol {
+  padding-top: 80px;
+}
+
+p {
+  font-family: sans-serif;
+  color: #3eacdf;
+  font-size: x-large;
+}
+
+.logo1 {
+  width: 200px;
+}
+
+.logo2 {
+  width: 118px;
+  margin-top: 35px;
+}
+
+a {
+  text-decoration: none;
+  margin-left: auto;
+  color: #3eacdf;
+  font-size: 14px;
+}
+
+.lineTag {
+  display: flex;
+  align-items: flex-start;
+}
+
+.btn {
+  background-color: #3eacdf;
+}
+
+.formCol{
+  margin-right: 0%;
+  padding-right: 0%;
+}
+
+.docImg {
+  position: absolute;
+  margin-right: 0px;
+  margin-left: 0px;
+  bottom: 0px;
+  right: 0px;
+  padding-left: 0%;
+}
+
+.login-user-ico {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 20px;
+}
+
+.login-user-ico2{
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  font-size: 20px;
+}
+strong{
+  font-size: 14px;
+}
+
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 14px;
+}
