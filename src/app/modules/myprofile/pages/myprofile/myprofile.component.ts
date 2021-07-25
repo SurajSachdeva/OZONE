@@ -54,7 +54,7 @@ export class MyprofileComponent implements OnInit {
     })
 
 
-    var user = this.appService.getLoginUserDetail()
+    this.appService.getLoginUserDetail()
     
   }
 

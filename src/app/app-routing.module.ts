@@ -42,7 +42,7 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'profile',
+        path: 'profile/:id',
         loadChildren: () =>
           import('./modules/myprofile/myprofile.module').then(
             (x) => x.MyprofileModule

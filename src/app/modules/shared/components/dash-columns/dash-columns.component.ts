@@ -12,8 +12,7 @@ import { ToastrService } from "ngx-toastr";
 })
 export class DashColumnsComponent implements OnInit {
 
-  @Input() data;
-
+  
   soCount: dataCount[];
 
   constructor(

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Title } from '@angular/platform-browser';
+
 @Component({
   selector: 'app-mis-form',
   templateUrl: './mis-form.component.html',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MisFormComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private title: Title
+  ) { 
+    this.title.setTitle('Ozone - MIS')
+  }
 
   ngOnInit(): void {
   }

@@ -3,12 +3,16 @@ import {
   ChangeDetectorRef,
   Component,
   Input,
-  OnInit
+  OnInit,
 } from '@angular/core';
 import { UserApi } from './../../../../apis/user-api.service';
 import { KycApiService } from './../../../../apis/kyc-api.service';
 import { AppService } from './../../../../services/app.service';
-import { SO_Data_Display, SO_Data_Display_response } from './../../../../models/data-display/index';
+import {
+  SO_Data_Display,
+  AD_Data_Display,
+  SO_Data_Display_Response
+} from './../../../../models/data-display/index';
 import { ToastrService } from 'ngx-toastr';
 import { FormBuilder } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
@@ -20,12 +24,13 @@ import { Title } from '@angular/platform-browser';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DashboardComponent implements OnInit {
-    
-  @Input() item;
+  @Input() so;
 
-  data: SO_Data_Display[];
+  data1: SO_Data_Display[];
+  data2: AD_Data_Display[];
+
   emp_code: string;
-  // filteredData: SO_Data_Display[];
+  user_role: string;
 
   constructor(
     private user: UserApi,
@@ -33,48 +38,46 @@ export class DashboardComponent implements OnInit {
     private service: AppService,
     private kycApi: KycApiService
   ) {
-    this.titleService.setTitle('Ozone - KYC Details');
+    this.titleService.setTitle('Ozone - Dashboard');
+    const UserDetails = this.service.getLoginUserDetail();
+    if (UserDetails) {
+      this.emp_code = UserDetails.Emp_Code;
+    }
   }
 
   ngOnInit() {
-    const userDetails = this.service.getLoginUserDetail();
-    if (userDetails) {
-      this.emp_code = userDetails.Emp_Code;
-      // var code = this.emp_code
-      // console.log(code);
-      this.kycApi
-      .getProfileDetails(this.emp_code)
-      .subscribe((data: any) => {
-        // console.log(code);
-        this.data = data.R0001[0]
+    const userRole = this.service.getLoginUserDetail();
+    if (userRole) {
+      this.user_role = userRole.User_Role;
+      console.log(this.user_role);
+    }
+
+    this.kycApi.getDashboardList(userRole.Emp_Code).subscribe(
+      (data: any) => {
+        if( userRole.User_Role === "SO" ){
+          this.data1 = data
+          // console.log(this.data)
         }
-      );
-    }
+      }
+    )
 
-    
+    this.kycApi.getDashboardList(userRole.Emp_Code).subscribe(
+      (data: any) => {
+        if(userRole.User_Role === "Admin"){
+          this.data2 = data ;
+          // console.log(this.data)
+        }
+      }
+    )
   }
 
-
-  // filterData(){
-  //   this.filteredData = this.data;
-  // }
-
-  getData(){
-    const userDetails = this.service.getLoginUserDetail();
-    if (userDetails) {
-      this.emp_code = userDetails.Emp_Code;
-      // console.log(this.emp_code);
-
-      // this.kycApi
-      // .getProfileDetails(this.emp_code)
-      // .subscribe((data: SO_Data_Display_response) => {
-      //   // console.log(this.emp_code);
-      //   if (data && typeof (data) === "object") {
-      //     this.data = data.SO_Data;
-      //   }
-      // });
-      // this.filterData();
+  get isAdmin(){
+    var userRole = this.service.getLoginUserDetail();
+    if(userRole) {
+      return userRole.User_Role === "Admin"
+    }
+    else{
+      return '';
     }
   }
-
 }
